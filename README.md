@@ -1,4 +1,4 @@
-# dojo-CodeSmellJS
+# Code Smells JS
 
 Na hora de revisar o código podemos ficar atentos para essas pistas de que tem algo errado.
 
@@ -30,4 +30,18 @@ const phone = {
 **correto*
 ```js
 const phoneNumber = '55555555';
+```
+
+### Verificações desnecessárias
+
+Na camada de renderização não deveria ter que verificar se um dado existe.
+
+```jsx
+<ul>
+  {data?.list((item) => <li>{item}<li>)}
+<ul>
+```
+
+```jsx
+<div>{data.phoneNumber ? 'data.phoneNumber' : ''}</div>
 ```
