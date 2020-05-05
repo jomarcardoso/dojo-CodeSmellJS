@@ -10,7 +10,7 @@ Os dados não formatados são suscetíveis a erros e torna a manutenção mais d
 
 Dado assim não deveria chegar na cadama de renderização.
 
-```html
+```jsx
 <div>
  {phoneNumber[0]}
 </div>
